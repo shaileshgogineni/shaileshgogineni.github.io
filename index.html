@@ -1,266 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shailesh Gogineni's Portfolio</title>
-    <meta name="description" content="Shailesh Gogineni's personal portfolio, showcasing skills, projects, and experience in data analysis and machine learning." />
-    <meta name="keywords" content="Shailesh Gogineni, Portfolio, Data Analyst, Machine Learning" />
-    <meta name="author" content="Shailesh Gogineni" />
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Shailesh Gogineni's Portfolio</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="ThemesBoss" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+        <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- Materialdesign Icons CSS -->
-    <link rel="stylesheet" href="CSS/materialdesignicons.min.css">
+        <!--Bootstrap Css-->
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" />
 
-    <!-- Mobirise Icons CSS -->
-    <link rel="stylesheet" href="CSS/mobiriseicons.css">
+        <!-- Materialdesign icons Css -->
+        <link rel="stylesheet" href="CSS/materialdesignicons.min.css">
 
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="CSS/magnific-popup.css">
+        <!-- Mobirise icons Css -->
+        <link rel="stylesheet" href="CSS/mobiriseicons.css">
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="CSS/animate.min.css">
+        <!-- Magnific-popup -->
+        <link rel="stylesheet" href="CSS/magnific-popup.css">
 
-    <!-- Owl Slider CSS -->
-    <link rel="stylesheet" href="CSS/owl.carousel.css" />
-    <link rel="stylesheet" href="CSS/owl.theme.css" />
-    <link rel="stylesheet" href="CSS/owl.transitions.css" />
+        <!-- Animate Css -->
+        <link rel="stylesheet" href="CSS/animate.min.css">
 
-    <!-- Custom Style CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
+        <!-- Owl Slider -->
+        <link rel="stylesheet" href="CSS/owl.carousel.css" />
+        <link rel="stylesheet" href="CSS/owl.theme.css" />
+        <link rel="stylesheet" href="CSS/owl.transitions.css" />
 
-    <script type="text/javascript">
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>
+        <!-- Custom style Css -->
+        <link rel="stylesheet" href="CSS/style.css">
 
-    <script>
-        function sendMail() {
-            var link = "mailto:shailesh.gogineni23@gmail.com"
-                     + "?cc=" + encodeURIComponent(document.getElementById('email').value)
-                     + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
-                     + "&body=" + encodeURIComponent(document.getElementById('comments').value);
+        <script type="text/javascript">
+        	var elements = document.getElementsByTagName("*");
+			for(var id = 0; id < elements.length; ++id) { 
+				elements[id].oncontextmenu = null; 
+			}
 
-            setTimeout(() => window.location.href = link, 3000);
-        }
-    </script>
-</head>
+        </script>
 
-<body>
-    <!-- START LOADER -->
-    <div id="preloader">
-        <div id="status">
-            <div class="spinner">Loading...</div>
-        </div>
-    </div>
-    <!-- END LOADER -->
+        <script>
+            function sendMail() {
+                var link = "mailto:shailesh.gogineni23@gmail.com"
+                         + "?cc=" + escape(document.getElementById('email').value)
+                         + "&subject=" + escape(document.getElementById('subject').value)
+                         + "&body=" + escape(document.getElementById('comments').value)
+                ;
 
-    <!-- START NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-        <div class="container">
-            <!-- LOGO -->
-            <a href="#" class="navbar-brand mr-0 mb-0"><img src="images/name.png" alt="Logo"></a>
+                setTimeout(() => window.location.href = link, 3000);
+            }
+        </script>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link">Work Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#education" class="nav-link">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#volunteering" class="nav-link">Volunteering</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+        <style>
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- START LOADER -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">Loading...</div>
             </div>
         </div>
-    </nav>
-    <!-- END NAVBAR -->
+        <!-- END LOADER -->
 
-    <!-- START HOME -->
-    <section class="home-bg section h-100vh" id="home">
-        <div class="bg-overlay"></div>
-        <div class="home-table">
-            <div class="home-table-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12">
-                            <div class="text-white text-center">
-                                <h4>Hello & Welcome</h4>
-                                <h1 class="header_title mb-0 mt-3">I Am <span class="element font-weight-bold" data-elements="Shailesh Gogineni,A Data Analyst, Machine Learning Enthusiast"></span></h1>
-                                <ul class="social_home list-unstyled text-center pt-4">
-                                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/shaileshgogineni" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
-                                    <li class="list-inline-item"><a href="https://github.com/shailesh" target="_blank"><i class="mdi mdi-github-circle"></i></a></li>
-                                </ul>
+        <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+            <div class="container">
+                <!-- LOGO -->
+                <p class="navbar-brand mr-0 mb-0"><a href="#" class=""><img src="images/name.png"></a><p>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#experience" class="nav-link">Work Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#volunteering" class="nav-link">Volunteering</a>
+                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a href="" target="" class="nav-link">Blog</a>-->
+<!--                        </li>-->
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+
+        <!--START HOME-->
+        <section class="home-bg section h-100vh" id="home">
+            <div class="bg-overlay"></div>
+            <div class="home-table">
+                <div class="home-table-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="text-white text-center">
+                                    <h4>Hello & Welcome</h4>
+                                    <h1 class="header_title mb-0 mt-3">I Am <span class="element font-weight-bold" data-elements=" Shailesh Gogineni,A Data Analyst, Machine Learning Enthusiast"></span></h1>
+                                    <ul class="social_home list-unstyled text-center pt-4">
+                                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/shaileshgogineni" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://github.com/shailesh" target="_blank"><i class="mdi mdi-github-circle"></i></a></li>
+                                    </ul>
+                                     <div class="header_btn">
+                                    
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll_down">
-            <a href="#about" class="scroll">
-                <i class="mbri-arrow-down text-white"></i>
-            </a>
-        </div>
-    </section>
-    <!-- END HOME -->
+            <div class="scroll_down">
+                <a href="#about" class="scroll">
+                    <i class="mbri-arrow-down text-white"></i>
+                </a>
+            </div>
+        </section>
+        <!--END HOME-->
 
-    <!-- START ABOUT -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center about-detail mx-auto mt-5">
-                        <h3 class="mb-3">Hello! <span class="font-weight-bold text-custom">I'M Shailesh Gogineni.</span></h3>
-                        <ul class="mb-0 list-inline text-center about-work">
-                            <li class="list-inline-item mr-0 text-muted">Data Analyst</li>
-                            <li class="list-inline-item mr-0 text-muted">Machine Learning Enthusiast</li>
-                        </ul>
-                        <p class="text-muted mt-3 text-justify">Experienced Data Analyst with 3 years of expertise in data analysis, processing, and visualization, dedicated to transforming raw data into meaningful insights that drive business decisions. Skilled in creating efficient ETL pipelines, managing databases, and implementing predictive models. Proficient in utilizing big data technologies and cloud environments to enhance data operations. Eager to expand into data engineering and data science roles, with a focus on applying advanced machine learning techniques and building scalable data architectures. Collaborative team player with a history of working across departments to deliver effective data-driven strategies.</p>
+        <!-- START ABOUT -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center about-detail mx-auto mt-5">
+                            <h3 class="mb-3">Hello! <span class="font-weight-bold text-custom">I'M Shailesh Gogineni.</span></h3>
+                            <ul class="mb-0 list-inline text-center about-work">
+                                <li class="list-inline-item mr-0 text-muted">Data Analyst</li>
+                                <li class="list-inline-item mr-0 text-muted">Machine Learning Enthusiast</li>
+                            </ul>
+                            <p class="text-muted mt-3 text-justify">Experienced Data Analyst with 3 years of expertise in data analysis, processing, and visualization, dedicated to transforming raw data into meaningful insights that drive business decisions. Skilled in creating efficient ETL pipelines, managing databases, and implementing predictive models. Proficient in utilizing big data technologies and cloud environments to enhance data operations. Eager to expand into data engineering and data science roles, with a focus on applying advanced machine learning techniques and building scalable data architectures. Collaborative team player with a history of working across departments to deliver effective data-driven strategies.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- END ABOUT -->
+        </section>
+        <!-- END ABOUT -->
 
-    <!-- START SKILLS -->
-    <section class="section" id="skills">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="text-center mx-auto section-main-title">
-                        <h2><span class="font-weight-bold">Skills</span></h2>
-                        <div class="main-title-border">
-                            <i class="mdi mdi-asterisk"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-6">
-                    <div class="progress-bars skill-custom">
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">Cloud</div>
-                        </div>
-                        <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="progress-bars skill-custom mt-4">
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">Programming Languages</div>
-                        </div>
-                        <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="progress-bars skill-custom">
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">Data Visualization</div>
-                        </div>
-                        <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="progress-bars skill-custom mt-4">
-                        <div class="clearfix">
-                            <div class="text-dark font-weight-bold float-left">Machine Learning</div>
-                        </div>
-                        <div class="progress mt-2">
-                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END SKILLS -->
-
-    <!-- START CONTACT -->
-    <section class="section bg-light" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center mx-auto section-main-title">
-                        <h2><span class="font-weight-bold">Contact Me</span></h2>
-                        <div class="main-title-border">
-                            <i class="mdi mdi-asterisk"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-8 mx-auto">
-                    <div class="text-center">
-                        <form name="contact-form" id="contact-form">
-                            <div class="form-group">
-                                <input name="email" id="email" type="email" class="form-control" placeholder="Your Email*" required>
+         <!-- START SKILLS -->
+         <section class="section" id="skills">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center mx-auto section-main-title">
+                            <h2><span class="font-weight-bold">Skills</span></h2>
+                            <div class="main-title-border">
+                                <i class="mdi mdi-asterisk"></i>
                             </div>
-                            <div class="form-group">
-                                <input name="subject" id="subject" type="text" class="form-control" placeholder="Subject*" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="progress-bars skill-custom">
+                            
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">Cloud</div>
                             </div>
-                            <div class="form-group">
-                                <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Message*" required></textarea>
+                            <div class="skills">
+                                <div>AWS</div>
+                                <div>Azure</div>
+                                <div>Kafka</div>
+                                <div>AWS EC2</div>
+                                <div>AWS S3</div>
                             </div>
-                            <button type="button" class="btn btn-custom" onclick="sendMail()">Send Message</button>
-                        </form>
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">DevOps</div>
+                            </div>
+                            <div class="skills">
+                                <div>Kubernetes</div>
+                                <div>Docker</div>
+                                <div>AWS EKS</div>
+                                <div>GitHub Actions</div>
+                                <div>Jenkins</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="progress-bars skill-custom">
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">Development</div>
+                            </div>
+                            <div class="skills">
+                                  <div>Java</div>
+                                  <div>Python</div>
+                                  <div>Scala</div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">Database</div>
+                            </div>
+                            <div class="skills">
+                                  <div>SQL</div>
+                                  <div>NoSQL</div>
+                                  <div>AWS Dynamo DB</div>
+                                  <div>Mongo DB</div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="text-dark font-weight-bold float-left">AI</div>
+                            </div>
+                            <div class="skills">
+                                <div>Deep Neural Networks</div>
+                                <div>LLM</div>
+                                <div>Generative AI</div>
+                                <div>Natural Language Processing</div>
+                                <div>TensorFlow</div>
+                                <div>Keras</div>
+                                <div>Statistical Analysis</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- END CONTACT -->
+        </section>
+        <!-- END SKILLS -->
 
-    <!-- START FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <p class="footer-alt text-muted mb-0">&copy; 2024 Shailesh Gogineni. All Rights Reserved.</p>
+        <!-- START EXPERIENCE -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center mx-auto section-main-title">
+                            <h2><span class="font-weight-bold">Work Experience</span></h2>
+                            <div class="main-title-border">
+                                <i class="mdi mdi-asterisk"></i>
+                            </div>
+                            <p class="text-muted mx-auto mt-2 text_justify">Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 pt-4">
+                        <div class="cv_edu_exp mt-3">
+                            <div class="cv_edu_exp_box mt-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Data Analyst</div>
+                                        <div class="cb_edu_exp_detail" style="width: 90%;">
+                                            <h4>Los Angeles Unified School District<span class="float_right">June 2022 - Present</span></h4>
+                                            <p class="city">Los Angeles, LA</p>
+                                            <p class="cv_desc mb-0">Achievements / Tasks:</p>
+                                            <ul>
+                                            	<li>
+                                            		Streamlined data processing workflows, reducing processing time by 30% and improving data accuracy
+                                            	</li>
+                                            	<li>
+                                            		Designed and implemented data validation processes that reduced data discrepancies by 40%, ensuring more reliable business insights.
+                                            	</li>
+                                                <li>
+                                            		Built and deployed ETL pipelines to integrate data from multiple sources into a centralized data warehouse, improving data accessibility for the analytics team.
+                                            	</li>
+                                                <li>
+                                            		Automated the generation of weekly and monthly reports using Python scripts, saving 20+ hours of manual work per month.
+                                            	</li>
+                                                <li>
+                                            		Successfully translated complex data insights into actionable recommendations for stakeholders, leading to more informed decision-making across departments.
+                                            	</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cv_edu_exp_box mt-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Data Analyst</div>
+                                        <div class="cb_edu_exp_detail" style="width: 90%;">
+                                            <h4>Vensit Corpo<span class="float_right">September 2021 -  March 2022</span></h4>
+                                            <p class="city">Sayreville, NJ</p>
+                                            <p class="cv_desc mb-0">Achievements / Tasks:</p>
+                                            <ul>
+                                            	<li>
+                                            		Gathered, cleaned, and transformed raw data from various sources into structured formats suitable for analysis and reporting.
+                                            	</li>
+                                            	<li>
+                                            		Managed and optimized SQL and NoSQL databases, ensuring efficient data storage and retrieval.
+                                            	</li>
+                                                <li>
+                                            		Performed statistical analysis on large datasets, using tools like Python, R, and SQL, and visualized results with Tableau, Power BI, and Matplotlib.
+                                            	</li>
+                                                <li>
+                                            		Experimented with and developed machine learning models for predictive analytics, contributing to business intelligence initiatives.
+                                            	</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cv_edu_exp_box mt-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Quality Analyst</div>
+                                        <div class="cb_edu_exp_detail" style="width: 90%;">
+                                            <h4>Coveo Info Solutions<span class="float_right">June 2018 - Dec 2019</span></h4>
+                                            <p class="city">Hyderabad, India</p>
+                                            <p class="cv_desc mb-0">Achievements / Tasks:</p>
+                                            <ul>
+                                            	<li>
+                                            		Participated in Requirement Analysis, Business Analysis, Use-Case Analysis and Gap Analysis.
+                                            	</li>
+                                            	<li>
+                                            		Used Python programming Language and automated test cases and validated those test cases.
+                                            	</li>
+                                                <li>
+                                                    Involved in providing the Testing Effort estimates and provided the timely feedback on progress of the testing activity.
+
+                                            	</li>
+                                                <li>
+                                            		Organized, monitored defect management process Handling changes and conducting regression tests.
+                                            	</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+                </div>                
+            </div>
+        </section>
+        <!-- END EXPERIENCE -->
+
+        <!-- START EDUCATION SECTION -->
+
+        <section class="section" id="education">
+        	<div class="bg-overlay"></div>
+        	<div class="container">
+        		<div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center mx-auto section-main-title">
+                            <h2><span class="font-weight-bold text-white">Education</span></h2>
+                            <div class="main-title-border">
+                                <i class="mdi mdi-asterisk font-weight-bold text-white"></i>
+                            </div>
+                            <p class="mx-auto mt-2 font-weight-bold text-white">An investment in knowledge pays the best interest.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="mx-auto study edu_box">
+                            <h3><span class="font-weight-bold text-white">Master of Science in Data Science  <span style="font-size: 0.8em">(Concentration in Data warehouse Machine Learning)</span></span></h3>
+                            <h4 class="font-weight-bold text-white">University of Maryland Baltimore County<span class="float_right">January 2020 - December 2021</span></h4>
+                            <p class="city text-white">Baltimore, MD</p>
+	                        <p class="mb-0 text-white">Courses:</p>
+	                        <ul class="columns2 text-white">
+	                        	<li>
+	                        		Machine Learning
+	                        	</li>
+	                        	<li>
+	                        		Deep Learning
+	                        	</li>
+	                        	<li>
+	                        		Big Data Programming
+	                        	</li>
+	                        	<li>
+	                        		Parallel Algorithms
+	                        	</li>
+                                <li>
+	                        		Statistical Analysis
+	                        	</li>
+	                        </ul>
+                        </div>
+                    </div>
+                </div>
+        		<div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="mx-auto study edu_box">
+                            <h3><span class="font-weight-bold text-white">Bachelor of Technology in Electronics and Communication Engineering</span></h3>
+                            <h4 class="font-weight-bold text-white">Bapatla Engineering College<span class="float_right">July 2014 - May 2018</span></h4>
+                            <p class="city text-white">Bapatla, India</p>
+	                        <p class="mb-0 text-white">Courses:</p>
+	                        <ul class="columns2 text-white">
+	                        	<li>
+	                        		Data Structures and Algorithms
+	                        	</li>
+	                        	<li>
+	                        		Digital Signal Processing
+	                        	</li>
+	                        	<li>
+	                        		Software Engineering
+	                        	</li>
+	                        	<li>
+	                        		Embedded Systems
+	                        	</li>
+	                        </ul>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+        </section>
+
+        <!-- END EDUCATION SECTION -->
+
+        <!-- START CERTIFICATES -->
+        <section class="section bg-client" id="volunteering">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center mx-auto text-white section-main-title">
+                            <h2><span class="font-weight-bold">Volunteering</span></h2>
+                            <div class="main-title-border">
+                                <i class="mdi mdi-asterisk"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- END FOOTER -->
+        </section>
+        <!-- END CERTIFICATES -->
 
-    <!-- Back to top -->
-    <a href="#" class="back-to-top" id="back-to-top"> 
-        <i class="mdi mdi-arrow-up"></i> 
-    </a>
+        <!-- CONTACT FORM START-->
+        <section class="section " id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center mx-auto section-main-title">
+                            <h2>Get In <span class="font-weight-bold">Touch</span></h2>
+                            <div class="main-title-border">
+                                <i class="mdi mdi-asterisk"></i>
+                            </div>
+                            <p class="text-muted mx-auto mt-2">Feel free to contact me</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="row mt-4 pt-4">
+                    <div class="col-lg-4">
+                        <div class="text-center mt-4">
+                            <div>
+                                <i class="mbri-mobile2 text-custom h2"></i>
+                            </div>
+                            <div class="mt-2">
+                                <p class="mb-0 font-weight-bold">Call Me On</p>
+                                <p class="text-muted">+1 6673453003</p>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <div>
+                                <i class="mbri-letter text-custom h2"></i>
+                            </div>
+                            <div class="mt-2">
+                                <p class="mb-0 font-weight-bold">Email Me At</p>
+                                <p class="text-muted">shailesh.gogineni23@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="contact_form">
+                            <form method="post">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mt-2">
+                                            <label for="name" class="font-weight-bold">Name</label>
+                                            <input name="name" id="name" type="text" class="form-control" placeholder="Your name..." required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mt-2">
+                                            <label for="email" class="font-weight-bold">Email address</label>
+                                            <input name="email" id="email" type="email" class="form-control" placeholder="Your email..."  required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <label for="subject" class="font-weight-bold">Subject</label>
+                                            <input type="text" class="form-control" id="subject" placeholder="Your Subject.."  required="required"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <label for="comments" class="font-weight-bold">Message</label>
+                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..." required="required"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-right">
+                                        <input class="btn btn-custom" type="submit" value="Send Message" onclick="sendMail(); return false"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> 
+                    </div>
+                </div>                          
+            </div>
+        </section> 
+        <!-- CONTACT FORM END-->
 
-    <!-- Bootstrap JS -->
-    <script src="JS/jquery.min.js"></script>
-    <script src="JS/bootstrap.bundle.min.js"></script>
+        <!-- START FOOTER -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="row pt-4 pb-4">
+                    <div class="col-lg-12">
+                        <div class="float-left float_none mt-2 mb-2">
+                            <p class="copy-rights text-muted mb-0">2024 &copy; Designed by Shailesh Gogineni</p>
+                        </div>
+                        <div class="float-right float_none mt-2 mb-2">
+                            <ul class="list-inline fot_social mb-0">
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/shaileshgogineni/" class="social-icon text-muted" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="https://github.com/shaileshgogineni" class="social-icon text-muted" target="_blank"><i class="mdi mdi-github-circle"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END FOOTER -->
 
-    <!-- Custom JS -->
-    <script src="JS/custom.js"></script>
-</body>
+        <!-- BACK TO TOP -->    
+        <a href="#" class="back_top"> <i class="mbri-arrow-up"> </i> </a>
+
+
+        <!-- JAVASCRIPTS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--EASING JS-->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <!-- TYPED -->
+        <script src="js/typed.js"></script>         
+        <!-- MFP JS -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!--PORTFOLIO FILTER JS-->
+        <script src="js/isotope.js"></script>     
+        <!-- OWL CAROUSEL -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!--CUSTOM JS-->
+        <script src="js/custom.js"></script>
+        <script>
+            $(".element").each(function() {
+                var $this = $(this);
+                $this.typed({
+                    strings: $this.attr('data-elements').split(','),
+                    typeSpeed: 100,
+                    backDelay: 3000
+                });
+            });
+        </script>
+    </body>
 </html>
